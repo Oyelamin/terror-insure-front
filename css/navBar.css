@@ -1,0 +1,100 @@
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 32px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+/* Left Section */
+.left-section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.logo {
+    border-right: 1px solid #dddddd;
+    padding: 0.944rem 1.88rem 0.94rem 0rem;
+    margin-left: 3.12rem;
+}
+
+.logo img {
+    width: 11.85rem;
+}
+
+
+/* Right Section */
+.right-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.87rem;
+    margin-right: 3.1rem;
+}
+
+/* Search Field */
+.search-field {
+    background-color: #f9f9f9;
+    /* border: 1px solid #dddddd; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 21.43rem;
+    padding: 0.44rem 2.25rem;
+    border-radius: 20px;
+}
+
+.search-field input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+}
+
+.placeholder {
+    font-size: 0.875rem;
+    font: 400;
+    letter-spacing: -0.0255rem;
+    color: #bbbbbb;
+}
+
+.icon-magnifying-glass {
+    width: 4px;
+    flex-shrink: 0;
+    color: #bbbbbb;
+}
+
+.notification {
+    position: relative;
+}
+
+.notification .icon-notification {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: #bbbbbb;
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    left: 60%;
+    border: 1px solod #f9f9f9;
+}
+
+.profilePic {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

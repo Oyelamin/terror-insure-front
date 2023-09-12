@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terror Insurance</title>
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="../css/navBar.css" rel="stylesheet" />
+    <link href="../css/sidebar.css" rel="stylesheet" />
+    <link href="../css/dashboard.css" rel="stylesheet" />
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar border-bottom">
+      <div class="header">
+        <div class="left-section">
+          <div class="logo">
+            <img src="../assests/logo.svg" alt="Logo" />
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="search-field">
+            <input type="text" placeholder="Search..." />
+            <div class="icon-magnifying-glass">
+              <img src="../assests/search.svg" alt="IconMagnifyingglass" />
+            </div>
+          </div>
+          <div class="notification">
+            <img src="../assests/notification.svg" alt="Ellipse" />
+            <div class="icon-notification">
+              <img src="../assests/notificationRedDot.svg" alt="Ellipse" />
+            </div>
+          </div>
+          <div class="profilePic">
+            <img src="../assests/notification.svg" alt="Ellipse" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="bigContainer">
+      <div class="main">
+        <div class="menu">
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome">
+                <img src="../assests/dashboard.svg" alt="" />
+              </div>
+              <div class="menu-text">Dashboard</div>
+            </div>
+          </a>
+          <a href="./manageCompanies.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard1">Manage Companies</div>
+              <img src="../assests/chevrondown.svg" class="menu-icon" />
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconpeople">
+                <img src="../assests/users.svg" alt="Iconpeople" />
+              </div>
+              <div class="menu-text" id="Dashboard2">Manage Users</div>
+              <img
+                src="../assests/chevrondown.svg"
+                class="menu-icon"
+                id="Fichevrondown1"
+                alt="Fichevrondown1"
+              />
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome1">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard3">Guest Insurance</div>
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome2">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard4">Manage Reservation</div>
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome3">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard5">Manage Transactions</div>
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome4">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard6">Manage Payment</div>
+            </div>
+          </a>
+          <div class="content-image"></div>
+        </div>
+        <div class="content">
+          <!-- <div class="content-overlay"></div> -->
+          <div class="dashboard">
+            <div class="heading">
+              <h3>General Report</h3>
+              <div class="d-flex flex-row align-items-center gap-2">
+                <button
+                  class="reload-button"
+                  style="background-color: #9a2a1b; border: 1px solid #9a2a1b"
+                >
+                  <img src="../assests/addCircle.svg" alt="" />
+                  Add Hotel
+                </button>
+                <button class="reload-button">
+                  <img src="../assests/refresh.svg" alt="" />
+                  Reload
+                </button>
+              </div>
+            </div>
+            <div class="cards row">
+              <div class="card col">
+                <div class="card-head">
+                  <img src="../assests/companiesBlack.svg" alt="" />
+                  <p class="">
+                    <span> 33%</span>
+                    <img src="../assests/chevronUp.svg" alt="" />
+                  </p>
+                </div>
+                <h2 class="">02</h2>
+                <p class="">Total Companies</p>
+              </div>
+              <div class="card col">
+                <div class="card-head">
+                  <img src="../assests/usersBlack.svg" alt="" />
+                  <p class="">
+                    <span> 33%</span>
+                    <img src="../assests/chevronUp.svg" alt="" />
+                  </p>
+                </div>
+                <h2 class="">138</h2>
+                <p class="">Total Users</p>
+              </div>
+              <div class="card col">
+                <div class="card-head">
+                  <img src="../assests/securePerson.svg" alt="" />
+                  <p class="">
+                    <span> 33%</span>
+                    <img src="../assests/chevronUp.svg" alt="" />
+                  </p>
+                </div>
+                <h2 class="">#37.3k</h2>
+                <p class="">Total Insured Amount</p>
+              </div>
+              <div class="card col">
+                <div class="card-head">
+                  <img src="../assests/securePerson.svg" alt="" />
+                  <p class="">
+                    <span> 33%</span>
+                    <img src="../assests/chevronUp.svg" alt="" />
+                  </p>
+                </div>
+                <h2 class="">283</h2>
+                <p class="">Total Reservations</p>
+              </div>
+            </div>
+
+            <div class="table mt-4 bg-white p-3">
+              <div class="tablehead row d-flex">
+                <div class="col-5">
+                  <h3>Listed hotels</h3>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-3"></div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

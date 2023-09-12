@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terror Insurance</title>
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="../css/navBar.css" rel="stylesheet" />
+    <link href="../css/sidebar.css" rel="stylesheet" />
+    <link href="../css/dashboard.css" rel="stylesheet" />
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar border-bottom">
+      <div class="header">
+        <div class="left-section">
+          <div class="logo">
+            <img src="../assests/logo.svg" alt="Logo" />
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="search-field">
+            <input type="text" placeholder="Search..." />
+            <div class="icon-magnifying-glass">
+              <img src="../assests/search.svg" alt="IconMagnifyingglass" />
+            </div>
+          </div>
+          <div class="notification">
+            <img src="../assests/notification.svg" alt="Ellipse" />
+            <div class="icon-notification">
+              <img src="../assests/notificationRedDot.svg" alt="Ellipse" />
+            </div>
+          </div>
+          <div class="profilePic">
+            <img src="../assests/notification.svg" alt="Ellipse" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="bigContainer">
+      <div class="main">
+        <div class="menu">
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome">
+                <img src="../assests/dashboard.svg" alt="" />
+              </div>
+              <div class="menu-text">Dashboard</div>
+            </div>
+          </a>
+          <a href="./manageCompanies.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard1">Manage Companies</div>
+              <img src="../assests/chevrondown.svg" class="menu-icon" />
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconpeople">
+                <img src="../assests/users.svg" alt="Iconpeople" />
+              </div>
+              <div class="menu-text" id="Dashboard2">Manage Users</div>
+              <img
+                src="../assests/chevrondown.svg"
+                class="menu-icon"
+                id="Fichevrondown1"
+                alt="Fichevrondown1"
+              />
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome1">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard3">Guest Insurance</div>
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome2">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard4">Manage Reservation</div>
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome3">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard5">Manage Transactions</div>
+            </div>
+          </a>
+          <a href="./Dashboard.html" class="">
+            <div class="menu-item">
+              <div class="menu-icon" id="Iconhome4">
+                <img src="../assests/companies.svg" alt="Company" />
+              </div>
+              <div class="menu-text" id="Dashboard6">Manage Payment</div>
+            </div>
+          </a>
+          <div class="content-image"></div>
+        </div>
+        <div class="content">
+          <!-- <div class="content-overlay"></div> -->
+          <div class="dashboard">
+            <div class="heading">
+              <h3>General Report</h3>
+              <button class="reload-button">
+                <img src="../assests/refresh.svg" alt="" />
+                Reload
+              </button>
+            </div>
+            <div class="cards row">
+              <div class="carded col">
+                <div class="card-head">
+                  <img src="../assests/companiesBlack.svg" alt="" />
+                  <p class="">
+                    <span> 33%</span>
+                    <img src="../assests/chevronUp.svg" alt="" />
+                  </p>
+                </div>
+                <h2 class="">02</h2>
+                <p class="">Total Companies</p>
+              </div>
+              <div class="carded col">
+                <div class="card-head">
+                  <img src="../assests/usersBlack.svg" alt="" />
+                  <p class="">
+                    <span> 33%</span>
+                    <img src="../assests/chevronUp.svg" alt="" />
+                  </p>
+                </div>
+                <h2 class="">138</h2>
+                <p class="">Total Users</p>
+              </div>
+              <div class="carded col">
+                <div class="card-head">
+                  <img src="../assests/securePerson.svg" alt="" />
+                  <p class="">
+                    <span> 33%</span>
+                    <img src="../assests/chevronUp.svg" alt="" />
+                  </p>
+                </div>
+                <h2 class="">#37.3k</h2>
+                <p class="">Total Insured Amount</p>
+              </div>
+              <div class="carded col">
+                <div class="card-head">
+                  <img src="../assests/securePerson.svg" alt="" />
+                  <p class="">
+                    <span> 33%</span>
+                    <img src="../assests/chevronUp.svg" alt="" />
+                  </p>
+                </div>
+                <h2 class="">283</h2>
+                <p class="">Total Insured Volume</p>
+              </div>
+            </div>
+            <div class="statistics">
+              <div class="statistic col">
+                <div class="statistic-head">
+                  <p class="">User distribution</p>
+                  <p class="options">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </p>
+                </div>
+                <div class="statistic-body">
+                  <div class="pieChart" id="doughnutChart"></div>
+                  <div class="col-9 row legends">
+                    <div class="col-4 d-flex flex-column border left-border">
+                      <span class="span"></span>
+                      <h5 class="">80%</h5>
+                      <p class="">Hotel User</p>
+                    </div>
+                    <div class="col-4 d-flex flex-column border">
+                      <span
+                        class="span"
+                        style="background-color: #faa630"
+                      ></span>
+                      <h5 class="">30</h5>
+                      <p class="">Insurance User</p>
+                    </div>
+                    <div class="col-4 d-flex flex-column border right-border">
+                      <span
+                        class="span"
+                        style="background-color: #fdd037"
+                      ></span>
+                      <h5 class="">23</h5>
+                      <p class="text-muted">NTDC User</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="statistic col">
+                <div class="statistic-head">
+                  <p class="">Insurance Statistics</p>
+                  <p class="options">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </p>
+                </div>
+                <div class="statistic-body">
+                  <div class="pieChart" id="pieChart"></div>
+                  <div class="col-9 row legends">
+                    <div class="col-6 d-flex flex-column border left-border">
+                      <span class="span"></span>
+                      <h5 class="">4,060.00</h5>
+                      <p class="">Paid Amount</p>
+                    </div>
+                    <div class="col-6 d-flex flex-column border right-border">
+                      <span
+                        class="span"
+                        style="background-color: #fdd037"
+                      ></span>
+                      <h5 class="">369.365.00</h5>
+                      <p class="text-muted">Outstanding Amount</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="graphs row">
+              <div class="graph-head d-flex flex-row justify-content-between">
+                <h5 class="">Revenue Trend</h5>
+                <p class="">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </p>
+              </div>
+              <div class="subHead row d-flex flex-row">
+                <div class="col-md-6 row">
+                  <div class="col-md-6 col-lg-4 border-end">
+                    <h5 class=""># 92,000.00</h5>
+                    <p class="text-muted">Total This Month</p>
+                  </div>
+                  <div class="col-md-6 ps-3">
+                    <h5 class="text-muted"># 56,000.00</h5>
+                    <p class="text-muted">Total Last Month</p>
+                  </div>
+                </div>
+                <div
+                  class="col-6 d-flex flex-row align-items-center justify-content-end gap-2"
+                >
+                  <div class="select d-flex flex-row border">
+                    <p class="this-year">This year</p>
+                    <img src="../assests/chevronDownBlack.svg" alt="" />
+                  </div>
+                  <div class="select d-flex flex-row border">
+                    <img src="../assests/filter.svg" alt="" />
+                    <p class="this-year">Filter</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row graph-container"
+                style="width: 80rem; height: 400px"
+                id="graph-container"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script>
+      anychart.onDocumentReady(function () {
+        // Define the data for 12 months
+        var data = [
+          ["Jan", 15000, 10000],
+          ["Feb", 5000, 15000],
+          ["Mar", 4000, 10000],
+          ["Apr", 12000, 8000],
+          ["May", 7000, 15000],
+          ["Jun", 2000, 10000],
+          ["Jul", 9000, 13000],
+          ["Aug", 22000, 20000],
+          ["Sep", 8000, 12000],
+          ["Oct", 15000, 9000],
+          ["Nov", 15000, 19000],
+          ["Dec", 24000, 13000],
+        ];
+
+        // Create a data set
+        var dataSet = anychart.data.set(data);
+
+        // Map the data for all series
+        var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
+        var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
+
+        // Create a line chart
+        var chart = anychart.line();
+
+        // Create the series and name them
+        var firstSeries = chart.line(firstSeriesData);
+        firstSeries.name("Roger Federer");
+        var secondSeries = chart.line(secondSeriesData);
+        secondSeries.name("Rafael Nadal");
+
+        // Set the Y-axis scale to vary between 0 and 25000 with graduations of 5000
+        chart.yScale().minimum(0);
+        chart.yScale().maximum(25000);
+        chart.yScale().ticks({ interval: 5000 });
+
+        // Add a legend
+        chart.legend().enabled(false);
+
+        chart.yAxis().ticks().enabled(false);
+        chart.xAxis().ticks().enabled(false);
+        chart.yGrid().enabled(true);
+
+        // Add a title
+        chart.title("");
+
+        // Specify where to display the chart
+        chart.container("graph-container");
+
+        // Draw the resulting chart
+        chart.draw();
+
+        var data = [
+          { x: "A", value: 921630 },
+          { x: "B", value: 537166 },
+          { x: "C", value: 588662 },
+        ];
+
+        let palette = anychart.palettes.distinctColors();
+        palette.items(["#1F5E4B", "#FAA630", "#FDD037"]);
+
+        // create a pie chart and set the data
+        chart = anychart.pie(data);
+        chart.palette(palette);
+
+        /* set the inner radius
+(to turn the pie chart into a doughnut chart)*/
+        chart.innerRadius("60%");
+        chart.legend().enabled(false);
+
+        // set the container id
+        chart.container("doughnutChart");
+
+        // initiate drawing the chart
+        chart.draw();
+
+        var data = [
+          { x: "A", value: 637166 },
+          { x: "B", value: 721630 },
+        ];
+
+        // create a chart and set the data
+        chart = anychart.pie(data);
+        palette.items(["#1F5E4B", "#FDD037"]);
+        chart.palette(palette);
+        chart.legend().enabled(false);
+
+        // set the container id
+        chart.container("pieChart");
+
+        // initiate drawing the chart
+        chart.draw();
+      });
+
+      // Helper function to generate random values within the specified range
+      function getRandomValue(max) {
+        return Math.floor(Math.random() * (max + 1));
+      }
+    </script>
+  </body>
+</html>

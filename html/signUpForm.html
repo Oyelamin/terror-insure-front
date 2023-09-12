@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terror Insurance</title>
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/signUp.css" rel="stylesheet" />
+    <link href="../css/signUpForm.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="pageWrapper addMargins">
+        <div class="loginBox">
+          <div class="right-side">
+            <img src="../assests/logo.svg" alt="" />
+            <div class="title">Enter your Company Information</div>
+
+            <form action="">
+              <div class="form-content">
+                <div class="background-image" id="Ellipse">
+                  <input type="file" name="" id="profilePic" class="d-none" />
+                  <label for="profilePic" class="circle-button cursor-pointer">
+                    <img
+                      src="../assests/camera.svg"
+                      alt="Circle Icon"
+                      class="circle-icon"
+                    />
+                  </label>
+                </div>
+                <div class="form-fields">
+                  <div class="form-field">
+                    <label for="companyName" class="form-label" id="Element6"
+                      >Company Name</label
+                    >
+                    <input
+                      type="text"
+                      id="companyName"
+                      placeholder="Enter Name"
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="companyBranch" class="form-label" id="Element12"
+                      >Company Branch</label
+                    >
+                    <select id="companyBranch" class="form-select">
+                      <option value="" disabled selected>Select Branch</option>
+                      <option value="branch1">Branch 1</option>
+                      <option value="branch2">Branch 2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-fields">
+                  <div class="form-field">
+                    <label for="contactNumber" class="form-label" id="Element8"
+                      >Contact Number</label
+                    >
+                    <div class="form-field">
+                      <input
+                        type="text"
+                        id="contactNumber"
+                        placeholder="801 234 5678"
+                        class="form-input"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label for="officialEmail" class="form-label" id="Element7"
+                      >Official Email</label
+                    >
+                    <input
+                      type="email"
+                      id="officialEmail"
+                      placeholder="Enter Email Address"
+                      class="form-input"
+                    />
+                  </div>
+                </div>
+                <div class="form-fields">
+                  <div class="form-field">
+                    <label for="cacNumber" class="form-label" id="Element11"
+                      >CAC Number</label
+                    >
+                    <input
+                      type="text"
+                      id="cacNumber"
+                      placeholder="Enter CAC Registration Number"
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label
+                      for="cacRegistrationDate"
+                      class="form-label"
+                      id="Element13"
+                      >CAC Registration Date</label
+                    >
+                    <input
+                      type="text"
+                      id="cacRegistrationDate"
+                      class="form-input"
+                      placeholder="DD - MM - YYYY"
+                    />
+                  </div>
+                </div>
+                <div class="form-fields">
+                  <div class="form-field">
+                    <label for="state" class="form-label" id="Element3"
+                      >State</label
+                    >
+                    <select id="state" class="form-select">
+                      <option value="" disabled selected>Select State</option>
+                      <option value="state1">State 1</option>
+                      <option value="state2">State 2</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label for="lga" class="form-label" id="Element5"
+                      >LGA</label
+                    >
+                    <select id="lga" class="form-select">
+                      <option value="" disabled selected>Select LGA</option>
+                      <option value="lga1">LGA 1</option>
+                      <option value="lga2">LGA 2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="address" class="form-label" id="Element1"
+                    >Address</label
+                  >
+                  <textarea
+                    id="address"
+                    placeholder="230, Sample Street, Lago|"
+                    class="form-textarea"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div class="form-fields">
+                  <div class="form-field">
+                    <label for="gpsCoordinates" class="form-label" id="Element4"
+                      >GPS Coordinates</label
+                    >
+                    <div class="gps-coordinates form-input">
+                      <div class="gps-coordinates-text">
+                        39°09'24.6''S 175°37'55.8''E.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label
+                      for="contactPersonName"
+                      class="form-label"
+                      id="Element2"
+                      >Contact Person’s Full Name</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="Enter Contact person’s name"
+                      id="contactPersonName"
+                      class="form-input"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <hr class="horizontalLine" />
+            <div class="row align-items-center">
+              <a href="./signUp.html" class="cancel-button">
+                <div class="button-text">Cancel</div>
+              </a>
+              <a href="./signUpComplete.html" class="finish-button">
+                <div class="button-text">Finish Registration</div>
+              </a>
+              <a href="../index.html" class="dont-have-account">
+                Have Account?
+                <span class="create-account">Login Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+/* Global Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../assests/terror\ bg.jpg) no-repeat center center fixed;
+}
+
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Header Styles */
+.loginBox {
+    box-shadow: -1px 1px 15px 0px rgba(184, 188, 202, 0.5);
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 55.28rem;
+    margin: 0 auto;
+}
+
+/* Left Side Styles */
+.left-side {
+    background-color: #f9f9f9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+    width: 33.3333%;
+}
+
+.left-side img {
+    margin: 0 8px;
+}
+
+/* Right Side Styles */
+.right-side {
+    flex-grow: 1;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; */
+    padding: 3.13rem;
+    min-height: 650px;
+    border: 1px solid #eeeeee;
+
+}
+
+/* Logo and Icons Styles */
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin: 1.88rem auto;
+}
+
+.logo-container .icon {
+    position: relative;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.logo-container .icon img {
+    max-width: 100%;
+}
+
+/* Text Content Styles */
+.title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #404040;
+    margin-bottom: 20px;
+    margin-top: 3.13rem;
+}
+
+.label {
+    font-size: 0.875rem;
+    color: #404040;
+    margin-bottom: 5px;
+}
+
+/* Input Field Styles */
+.input-container {
+    border: 1px solid #eeeeee;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 4px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.input-container .input-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #909090;
+    flex-grow: 1;
+    border: 0px solid #fff;
+    outline: none;
+}
+
+/* Password Input Styles */
+/* .password-input {
+    border-color: #909090;
+} */
+
+.password-input .input-text {
+    font-weight: bold;
+}
+
+/* Forgot Password Link Styles */
+.forgot-password {
+    font-size: 0.75rem;
+    color: #9a2a1b;
+    margin-bottom: 20px;
+}
+
+/* Remember Me Styles */
+.remember-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3.13rem;
+}
+
+.remember-me .checkbox {
+    border: 1px solid #d0d5dd;
+    width: 18px;
+    height: 18px;
+    border-radius: 25%;
+    margin-right: 10px;
+}
+
+.remember-me .label {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+/* Login Button Styles */
+.login-button {
+    background-color: #005341;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.13rem;
+    height: 48px;
+    border-radius: 32px;
+    cursor: pointer;
+    width: 9.62rem;
+    text-decoration: none;
+}
+
+.login-button .button-text {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 0.75rem;
+}
+
+/* Don't Have an Account Styles */
+.dont-have-account {
+    font-size: 0.875rem;
+    color: #909090;
+    text-decoration: none;
+}
+
+.dont-have-account .create-account {
+    font-weight: bold;
+    color: #9a2a1b;
+}
+
+.footerText {
+    font-size: 0.875rem;
+    color: #909090;
+    margin-bottom: 20px;
+    margin-top: 0.6rem;
+}

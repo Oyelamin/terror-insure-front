@@ -1,0 +1,75 @@
+.accountType {
+    display: inline-flex;
+    padding: 0.3125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    margin-bottom: 2.25rem;
+}
+
+.accountType .account-type {
+    display: flex;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 2.6875rem 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    border-radius: 1.25rem;
+    border: 2px solid #EEE;
+    background-color: white;
+}
+
+.accountType .account-type .account-type-text {
+    color: #CCC;
+    text-align: center;
+    /* font-family: Public Sans; */
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.finish-button {
+    background-color: #005341;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.13rem;
+    height: 48px;
+    border-radius: 32px;
+    cursor: pointer;
+    width: 15.0625rem;
+    text-decoration: none;
+}
+
+.finish-button .button-text {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 0.75rem;
+}
+
+.cancel-button {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.13rem;
+    height: 48px;
+    border-radius: 32px;
+    cursor: pointer;
+    width: 9.62rem;
+    text-decoration: none;
+    border: 1px solid #005341;
+    margin-right: 1.88rem;
+}
+
+.cancel-button .button-text {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #005341;
+    padding: 0 0.75rem;
+}

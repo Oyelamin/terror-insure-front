@@ -1,0 +1,266 @@
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.background-image {
+    width: 12.5rem;
+    height: 12.5rem;
+    flex-shrink: 0;
+    border-radius: 12.5rem;
+    border: 2px solid #CCC;
+    background: #FFF;
+    position: relative;
+    margin-bottom: 2.8rem;
+}
+
+.circle-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #CCC;
+    background: #FFF;
+    width: 3.75rem;
+    height: 3.75rem;
+    fill: #FAFAFA;
+    stroke-width: 1px;
+    stroke: #EEE;
+}
+
+.circle-icon {
+    width: 2rem;
+}
+
+.form-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-bottom: 0.6rem;
+    margin-left: 0.1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6rem;
+}
+
+.form-label {
+    color: #333;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.00875rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    border: 1px solid #eeeeee;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.75rem;
+    align-items: flex-start;
+    border-radius: 0.2rem;
+}
+
+.form-input {
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 1rem;
+    font-weight: 400;
+    color: #909090;
+}
+
+.form-select {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25625rem;
+    color: #909090;
+    appearance: none;
+}
+
+.form-select option {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25625rem;
+    color: #909090;
+}
+
+.form-textarea {
+    font-family: 'Public_Sans', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25625rem;
+    color: #909090;
+    resize: none;
+}
+
+.form-fields-select {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+}
+
+.form-fields-select .form-field {
+    width: 60%;
+}
+
+.form-fields-select .form-select {
+    width: 100%;
+}
+
+.form-fields-select .form-input {
+    width: 30%;
+}
+
+.form-fields-select .form-select,
+.form-fields-select .form-input {
+    margin-bottom: 0;
+}
+
+.form-fields-select .form-input {
+    margin-top: 0.1rem;
+}
+
+.form-fields-select .form-input input {
+    width: 100%;
+}
+
+.form-fields-select .form-input input::placeholder {
+    color: #909090;
+}
+
+.form-fields-select .form-input input[type='text'],
+.form-fields-select .form-input input[type='email'],
+.form-fields-select .form-input input[type='tel'] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #404040;
+    border: 1px solid #909090;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 1.5rem;
+    height: 1.2rem;
+}
+
+.form-fields-select .form-input input[type='tel'] {
+    padding-right: 2.0rem;
+}
+
+.form-fields-select .form-input input[type='text']::placeholder,
+.form-fields-select .form-input input[type='email']::placeholder,
+.form-fields-select .form-input input[type='tel']::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #909090;
+}
+
+.form-fields-select .form-input input[type='text']:disabled,
+.form-fields-select .form-input input[type='email']:disabled,
+.form-fields-select .form-input input[type='tel']:disabled {
+    background-color: #f9f9f9;
+    color: #909090;
+}
+
+.form-fields-select .form-input input[type='text']:focus,
+.form-fields-select .form-input input[type='email']:focus,
+.form-fields-select .form-input input[type='tel']:focus {
+    border-color: #909090;
+}
+
+.form-fields-select .form-select select:disabled {
+    background-color: #f9f9f9;
+    color: #909090;
+}
+
+.form-fields-select .form-select select:focus {
+    border-color: #909090;
+}
+
+.form-label-select {
+    font-size: 1.4rem;
+    font-family: 'Public_Sans', sans-serif;
+    letter-spacing: 0.14rem;
+    color: #333333;
+    margin-bottom: 0.2rem;
+    margin-left: 0.1rem;
+}
+
+.form-checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+}
+
+.checkbox {
+    border: 1px solid #d0d5dd;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 1.2rem;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.checkbox input[type='checkbox'] {
+    display: none;
+}
+
+.checkbox-label {
+    font-family: 'Public_Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: #333333;
+}
+
+.checkbox-checkmark {
+    border: 1px solid #d0d5dd;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1.2rem;
+    width: 1.2rem;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.checkbox-checkmark::before {
+    content: '';
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #333333;
+    border-radius: 50%;
+}
+
+.horizontalLine {
+    border: 1px solid #333;
+    margin-top: 4.38rem;
+    margin-bottom: 1.8rem;
+}
+
+.addMargins {
+    margin: 5rem auto;
+}
